@@ -14,6 +14,20 @@ What really matters is for you to have understood the respective advantages and 
 
 You will not need to build an authentication system for this specific API, as that is a more advanced topic we will discuss together in the next sections of the course!
 
+## Model
+
+In the project, you will need to create a model called `JobOffer` with the following fields:
+
+- `company_name`: A string representing the name of the company.
+- `company_email`: A string representing the contact email of the company.
+- `job_title`: A string representing the title of the job offer.
+- `job_description`: A text field that describes the job offer.
+- `salary`: A decimal field to represent the salary for the job offer.
+- `city`: A string representing the city in which the job is located.
+- `state`: A string representing the state in which the job is located.
+- `created_at`: A datetime field that captures the time the job offer was created.
+- `available`: A boolean field indicating whether the job offer is still available.
+
 ## Requirements
 
 <!-- TODO: List the project requirements here -->
