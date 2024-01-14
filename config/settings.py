@@ -37,13 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'rest_framework',
-]
-
-# My own apps registration:
-INSTALLED_APPS += [
-    'apps.job_offers'
 ]
 
 MIDDLEWARE = [
