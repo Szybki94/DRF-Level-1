@@ -3,24 +3,12 @@ from django.db import models
 
 # Create your models here.
 class JobOffer(models.Model):
-    company_name = None
-    company_email = None
-    job_title = None
-    job_description = None
-    salary = None
-    city = None
-    state = None
-    created_at = None
-    available = None
-
-# Modele:
-# Dla projektu wymagany jest tylko jeden model, który można nazwać JobOffer. Powinien on zawierać następujące pola:
-# - company_name
-# - company_email
-# - job_title
-# - job_description
-# - salary
-# - city
-# - state
-# - created_at
-# - available
+    company_name = models.CharField(max_length=120)
+    company_email = models.EmailField()
+    job_title = models.CharField(max_length=240)
+    job_description = models.TextField()
+    salary = models.DecimalField(max_digits=8, decimal_places=2)
+    city = models.CharField(max_length=240)
+    state = models.CharField(max_length=240)
+    created_at = models.DateTimeField(auto_now_add=True)
+    available = models.BooleanField(default=True)
