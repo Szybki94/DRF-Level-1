@@ -29,10 +29,16 @@ In the project, you will need to create a model called `JobOffer` with the follo
 - `available`: A boolean field indicating whether the job offer is still available.
 
 ## Requirements
-
-<!-- TODO: List the project requirements here -->
+```
+asgiref==3.7.2
+Django==5.0.1
+djangorestframework==3.14.0
+pytz==2023.3.post1
+sqlparse==0.4.4
+typing_extensions==4.9.0
+```
 
 ## App Setup Instructions
-
+I think it will never happen, sorry :(
 <!-- TODO: Add app setup instructions here -->
 
